@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ronan — Sites web pour commerces locaux | Voves</title>
+  <meta name="description" content="Création de sites vitrine professionnels pour artisans et commerces autour de Voves. Livraison en 14 jours." />
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a2332;
+      --text: #e8eef4;
+      --muted: #8b9cb3;
+      --accent: #3b82f6;
+      --accent-hover: #2563eb;
+      --success: #22c55e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    header { margin-bottom: 2.5rem; }
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      background: rgba(59, 130, 246, 0.15);
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+    h1 { font-size: clamp(1.75rem, 5vw, 2.25rem); font-weight: 700; line-height: 1.2; margin-bottom: 0.75rem; }
+    .lead { font-size: 1.1rem; color: var(--muted); max-width: 36ch; }
+    section { margin-bottom: 2.5rem; }
+    h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 1rem; }
+    .card {
+      background: var(--surface);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .card h3 { font-size: 1.1rem; margin-bottom: 0.35rem; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+    .card a.project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-top: 0.75rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .card a.project-link:hover { color: var(--accent-hover); }
+    .offer-grid { display: grid; gap: 0.75rem; }
+    .offer-grid li {
+      list-style: none;
+      padding-left: 1.5rem;
+      position: relative;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .offer-grid li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--success);
+      font-weight: bold;
+    }
+    .price { font-size: 1.5rem; font-weight: 700; color: var(--text); margin: 0.5rem 0 0.25rem; }
+    .price span { font-size: 0.9rem; font-weight: 400; color: var(--muted); }
+    .cta {
+      display: block;
+      text-align: center;
+      background: var(--accent);
+      color: #fff !important;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      margin-top: 1rem;
+      transition: background 0.15s;
+    }
+    .cta:hover { background: var(--accent-hover); }
+    .contact-alt {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="badge">Voves · Eure-et-Loir</span>
+      <h1>Sites web pro pour les commerces du coin</h1>
+      <p class="lead">Je crée des sites vitrine clairs, rapides sur mobile, livrés en 2 semaines — pour artisans, commerces et indépendants.</p>
+    </header>
+
+    <section aria-labelledby="proof">
+      <h2 id="proof">Preuve de travail</h2>
+      <article class="card">
+        <h3>MyApps — Hub d’applications web</h3>
+        <p>Plateforme en ligne avec plusieurs apps (partage de fichiers, checklists, suivi sport). Déployée et fonctionnelle — preuve que je sais livrer un vrai produit sur le web.</p>
+        <a class="project-link" href="https://myapps-production-4a20.up.railway.app" target="_blank" rel="noopener">Voir MyApps →</a>
+      </article>
+    </section>
+
+    <section aria-labelledby="offer">
+      <h2 id="offer">Offre lancement</h2>
+      <div class="card">
+        <h3>Site Vitrine Local</h3>
+        <ul class="offer-grid">
+          <li>1 page d’accueil + 3 sections (Services, À propos, Contact)</li>
+          <li>Design propre, optimisé mobile</li>
+          <li>Formulaire contact ou bouton appel</li>
+          <li>Livré en 14 jours ouvrés (dès réception de vos textes et photos)</li>
+          <li>2 allers-retours de corrections inclus</li>
+        </ul>
+        <p class="price">40-60 € (selon les fonctionnalités) <span>création</span> + 15 €<span>/mois maintenance et hébergement</span></p>
+        <p style="font-size: 0.85rem; color: var(--muted); margin-top: 0.5rem;">Tarif préférentiel — 2 places restantes avant passage au tarif standard.</p>
+        <!-- Remplace EMAIL par ton adresse avant envoi des messages -->
+        <a class="cta" href="mailto:Ronan2ndcompte@gmail.com?subject=Demande%20site%20vitrine%20-%20Voves">Me contacter</a>
+        <p class="contact-alt">Ou par téléphone : <strong>06 35 64 03 31</strong></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Ronan · Développeur web · Voves (28)</p>
+    </footer>
+  </div>
+</body>
+</html>
