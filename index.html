@@ -102,6 +102,63 @@
       padding-top: 2rem;
       border-top: 1px solid rgba(255,255,255,0.06);
     }
+    .compare-intro {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 0 -0.25rem;
+    }
+    table.compare {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      min-width: 520px;
+    }
+    table.compare th,
+    table.compare td {
+      padding: 0.65rem 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    table.compare th {
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    table.compare tr.highlight {
+      background: rgba(59, 130, 246, 0.12);
+    }
+    table.compare tr.highlight td {
+      border-bottom-color: rgba(59, 130, 246, 0.25);
+      color: var(--text);
+      font-weight: 500;
+    }
+    table.compare tr.highlight td:first-child {
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .savings {
+      margin-top: 1rem;
+      padding: 1rem 1.25rem;
+      background: rgba(34, 197, 94, 0.1);
+      border: 1px solid rgba(34, 197, 94, 0.25);
+      border-radius: 10px;
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+    .savings strong { color: var(--success); }
+    .footnote {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 0.75rem;
+      line-height: 1.5;
+    }
   </style>
 </head>
 <body>
@@ -119,6 +176,65 @@
         <p>Plateforme en ligne avec plusieurs apps (partage de fichiers, checklists, suivi sport). Déployée et fonctionnelle — preuve que je sais livrer un vrai produit sur le web.</p>
         <a class="project-link" href="https://myapps-production-4a20.up.railway.app" target="_blank" rel="noopener">Voir MyApps →</a>
       </article>
+    </section>
+
+    <section aria-labelledby="compare">
+      <h2 id="compare">Comparer les tarifs du marché</h2>
+      <p class="compare-intro">
+        Pour un <strong>site vitrine simple</strong> (1 page, contact, mobile) — fourchettes indicatives en France (2025–2026).
+      </p>
+      <div class="card">
+        <div class="table-wrap">
+          <table class="compare">
+            <thead>
+              <tr>
+                <th>Prestataire</th>
+                <th>Création</th>
+                <th>Par mois</th>
+                <th>Délai</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="highlight">
+                <td>Ronan — Voves</td>
+                <td><strong>40–60 €</strong></td>
+                <td><strong>15 €</strong></td>
+                <td>14 jours</td>
+              </tr>
+              <tr>
+                <td>Agence web</td>
+                <td>3 000 – 8 000 €</td>
+                <td>50 – 150 €</td>
+                <td>1 – 3 mois</td>
+              </tr>
+              <tr>
+                <td>Freelance expérimenté (Malt, etc.)</td>
+                <td>800 – 2 500 €</td>
+                <td>30 – 80 €</td>
+                <td>2 – 6 sem.</td>
+              </tr>
+              <tr>
+                <td>Pack en ligne (type WordPress clé en main)</td>
+                <td>490 – 990 €</td>
+                <td>20 – 40 €</td>
+                <td>2 – 4 sem.</td>
+              </tr>
+              <tr>
+                <td>DIY (Wix, Squarespace, Hostinger…)</td>
+                <td>0 – 200 €</td>
+                <td>15 – 50 €</td>
+                <td>À faire vous-même</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="savings">
+          <strong>Économie indicative :</strong> par rapport à une agence (≈ 4 000 € + 80 €/mois), mon offre lancement représente environ <strong>98 % de moins</strong> sur la création la première année — avec un interlocuteur local qui connaît les commerces du coin.
+        </p>
+        <p class="footnote">
+          Sources : moyennes observées sur agences web, baromètre Malt (freelances web/design), comparatifs « site vitrine artisan » 2025–2026. Les montants varient selon le nombre de pages, le SEO, les photos pro et les fonctionnalités (réservation, boutique…). Mon offre couvre un vitrine <em>packagé</em> : pas du sur-mesure illimité.
+        </p>
+      </div>
     </section>
 
     <section aria-labelledby="offer">
@@ -146,3 +262,4 @@
   </div>
 </body>
 </html>
+
